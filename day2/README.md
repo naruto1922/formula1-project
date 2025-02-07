@@ -14,3 +14,6 @@ This document summarizes the key learnings from Day 2 of the Azure Databricks co
   - **Selecting specific columns** with `df.select(col("..."))`
   - **Transforming columns** using `withColumn("NewColumnName", function)`
   - **Partitioning** while writing a file for optimized storage and retrieval
+
+### Note: Run the python files in ingest folder in your own spark cluster hosted in your Azure Databricks workspace.
+  
