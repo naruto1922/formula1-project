@@ -5,8 +5,8 @@ This document summarizes the key learnings from Day 2 of the Azure Databricks co
 
 ## Key Learnings
 
-### 1. Ingesting .CSV Files from One Location to Another
-- Explored various Spark functions for handling CSV files:
+### 1. Ingesting .CSV & JSON Files from One Location to Another
+- Explored various Spark functions for handling CSV & JSON files:
   - **spark.sql.functions** for data manipulation
   - **spark.sql.types** for defining data types
   - **Specifying schema** using `StructType`
@@ -14,6 +14,8 @@ This document summarizes the key learnings from Day 2 of the Azure Databricks co
   - **Selecting specific columns** with `df.select(col("..."))`
   - **Transforming columns** using `withColumn("NewColumnName", function)`
   - **Partitioning** while writing a file for optimized storage and retrieval
+  - **Handling Multiple Line Json** using multiLine:True
+  - **Selecting Multiple Files at once**
 
 ### Note: Run the python files in ingest folder in your own spark cluster hosted in your Azure Databricks workspace.
   
